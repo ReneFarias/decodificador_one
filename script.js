@@ -45,9 +45,9 @@ function descriptografar() {
         texto = textoCriptografado;
         tituloMenssagem.textContent = textoCriptografado;
         paragrafo.textContent = "";
-        boneco.src = "/busca.jpg";
+        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/busca.jpg";
     } else {
-        boneco.src = "/erro.jpg";
+        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/erro.jpg";
         tituloMenssagem.textContent = "Nenhuma menssagem foi encontrada para descriptar!";
         paragrafo.textContent = "Insira o texto que deseja descriptar.";
         alert("Por favor, inserira um texto!");
