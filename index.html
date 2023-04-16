@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <!-- separar caixa dentro de caixa para organizar, descifrar e criptografar -->
+    <div class="container">
+        <div class="decifrar">
+            <!-- textearea que é o correto name do campo, classe pro css, id pro js, placeholder=campo pre preenchido, cols=colunas, rows=linhas-->
+            <textarea name="texto" class="texto" id="texto" placeholder="Digite aqui" cols="30" rows="10"></textarea>           
+        
+        <div class="aviso">
+            <p>!Só letras minúsculas e sem acentos.</p>
+        </div>
+        <div class="botoes">
+            <button class="btn-criptografar" type="button" onclick="criptografar()">Criptografar</button>        
+            <input type="button" class="btn-descriptografar" value="Descriptografar" onclick="descriptografar()">
+        </div>
+        <div class="cifrado">
+            <img src="/busca.jpg" alt="" id="boneco">
+             <div class="menssagem-cifrada" id="menssagem-cifrada">
+                <h2 name="texto" id="titulo-menssagem">Nenhuma menssagem encontrada</h2>
+                <p id="paragrafo">Insira o que deseja criptografar ou descriptografar</p>
+                <button class="copiar" id="copy-btn" type="button" onclick="copyToClickBoard()">COPIAR</button>
+                <button class="btn-reset" id="btn-reset" onClick="window.location.reload();">Limpar</button> <!--
+                <textarea name="menssagem" id="menssagem" cols="30" rows="10" class="menssagem"></textarea> -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por RENE</p>
+    </footer>
+</body>
+<script src="/script.js"></script>
+</html>
