@@ -284,6 +284,60 @@ footer p {
     .container{
         display: block;
     }
+    .cifrado img{
+        align-items: center;
+        width: 28vw;
+        height: 25vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        left: 3%;
+        top: 1%;
+        border-radius: 15px;
+    }
+    .menssagem-cifrada{
+        display: flex;
+        width: 35vw;
+        height: 25vw;
+        top: 20vw;
+        left: -9%;
+    } 
+
+    .menssagem-cifrada p{
+        display: flex;
+        align-items: center;
+        top: 1%;
+        font-size: 12px;
+        margin: 1px auto;
+    }
+    .resultado {
+        display: block;
+        font-size: 15px;
+
+    }
+    .copiar, .btn-reset{
+       
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 26px;
+        font-size: 15px;
+        margin: 0 auto;
+        
+    }
+    .copiar:hover{
+        width: 70px;
+        height: 23px;
+        font-size: 15px;
+        margin: 0 auto;
+        
+    }
+    .btn-reset:hover{
+        width: 70px;
+        height: 23px;
+        font-size: 15px;
+        margin: 0 auto;
+        
+    }
 }
 @media screen and (max-width: 768px) {
     body{
@@ -292,7 +346,100 @@ footer p {
     .container{
         display: block;
     }
-}
+    .share{
+        display: inline-block;
+    }
+    .share a{
+        width: 2vw;
+        margin: 0 auto;
+    }
+    .share h3{
+        display: block;
+        font-size: 15px;
+        color: rgb(51, 219, 51);
+        font-weight: bold ;
+        top: 2px;
+        left: 0%;
+    }
+    .share h3 span{
+        font-size: 12px;
+        width: 80vw;
+    }
+    .texto{
+        display: inline-block;
+        width: 40vw;
+        height: 20vw;
+        margin: 62px 20px 20px 0%;
+        font-size: 20px;
+    }
+    .cifrado{
+        display: block;
+        flex-direction: column;
+        width: 30vw;
+        height: 51vw;
+        top: 2vw;
+        margin: 0 auto;
+        font-size: 10px;
+        left: 65%;
+    }
+    .cifrado img{
+        align-items: center;
+        width: 28vw;
+        height: 25vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        left: 3%;
+        top: 1%;
+        border-radius: 15px;
+    }
+    .menssagem-cifrada{
+        display: flex;
+        width: 35vw;
+        height: 25vw;
+        top: 25vw;
+        left: -9%;
+    } 
+
+    .menssagem-cifrada p{
+        display: flex;
+        align-items: center;
+        top: 1%;
+        font-size: 12px;
+        margin: 1px auto;
+    }
+    .resultado {
+        display: block;
+        font-size: 15px;
+
+    }
+    .aviso{
+        top: 78%;
+    }
+    .copiar, .btn-reset{
+       
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 26px;
+        font-size: 15px;
+        margin: 0 auto;
+        
+    }
+    .copiar:hover{
+        width: 70px;
+        height: 23px;
+        font-size: 15px;
+        margin: 0 auto;
+        
+    }
+    .btn-reset:hover{
+        width: 70px;
+        height: 23px;
+        font-size: 15px;
+        margin: 0 auto;
+        
+    }
+  
 
 @media screen and (max-width: 600px){
     body{
@@ -305,13 +452,14 @@ footer p {
         width: 100vw;
         height: 220vw;
     }
-    .share{
-
+    .share a{
+        width: 3.5vw;
     }
     .share h3{
         font-size: 21px;
         color: darkgreen;
         font-weight: bold ;
+        top: 5%;
     }
     .share h3 span{
         font-size: 16px;
@@ -354,7 +502,9 @@ footer p {
     } 
 
     .menssagem-cifrada p{
+        display: flex;
         align-items: center;
+        margin-left: 2%;
     }
     .resultado {
         display: block;
@@ -406,5 +556,50 @@ footer p {
     .footer p{
         font-size: 10px;
     }
+}
+}
+@media screen and (max-width: 280px) {
+    .cifrado img{
+        align-items: center;
+        width: 70vw;
+        height: 45vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        left: 5%;
+        top: 1%;
+        border-radius: 15px;
+    }
+    .menssagem-cifrada{
+        display: flex;
+        
+        width: 85vw;
+        height: 60vw;
+        top: 45vw;
+        margin-left: -8%;
+    } 
 
+    .menssagem-cifrada p{
+        display: flex;
+        align-items: center;
+        margin-left: 8%;
+    }
+    .resultado {
+        display: block;
+
+    }
+    .aviso{
+        top: 43%;
+        
+    }
+    .aviso p{
+        font-size: 13px;
+    }
+    .btn-criptografar, .btn-descriptografar {
+        width: 45%;
+        font-size: 12px;
+    }
+    .btn-criptografar:hover, .btn-descriptografar:hover {
+        width: 40%;
+        font-size: 12px;
+    }
 }
