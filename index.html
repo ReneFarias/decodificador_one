@@ -5,37 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de texto</title>
+    <link rel="shortcut icon" href="/icone-pag.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
+
     <!-- separar caixa dentro de caixa para organizar, descifrar e criptografar -->
-    <div class="container">
+    <div class="container">        
+        <div class="share">
+            
+            <a href="#" onclick="location.href='https://www.instagram.com/rene.farias_/'" class="fab fa-instagram"></a>
+            <a href="#" onclick="location.href='https://www.facebook.com/profile.php?id=100076399941987'" class="fab fa-facebook-f"></a>
+            <a href="#" onclick="location.href='https://www.linkedin.com/in/renefarias?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3BA%2FBXKOXzSE%2BRCaDxENxVfQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile'" class="fab fa-linkedin"></a>
+            <a href="#" onclick="location.href='https://github.com/ReneFarias'" class="fab fa-github"></a>
+            <h3 class="post">Decodificador de código <span class="typing-text"></span></h3>
+            <!-- <a href="#" class="fab fa-pinterest"></a>
+            <a href="#" class="fab fa-twitter"></a> -->
+        </div>
         <div class="decifrar">
             <!-- textearea que é o correto name do campo, classe pro css, id pro js, placeholder=campo pre preenchido, cols=colunas, rows=linhas-->
             <textarea name="texto" class="texto" id="texto" placeholder="Digite aqui" cols="30" rows="10"></textarea>           
         
         <div class="aviso">
-            <p>!Só letras minúsculas e sem acentos.</p>
+            <p>⚠ Só letras minúsculas e sem acentos.</p>
         </div>
         <div class="botoes">
             <button class="btn-criptografar" type="button" onclick="criptografar()">Criptografar</button>        
             <input type="button" class="btn-descriptografar" value="Descriptografar" onclick="descriptografar()">
         </div>
         <div class="cifrado">
-            <img src="https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/busca.jpg" alt="" id="boneco">
+            <img src="/busca.jpg" alt="" id="boneco">
              <div class="menssagem-cifrada" id="menssagem-cifrada">
-                <h2 name="texto" id="titulo-menssagem">Nenhuma menssagem encontrada</h2>
+                <textarea readonly name="texto" class="resultado"  id="titulo-menssagem" placeholder="Nenhuma menssagem encontrada" cols="30" rows="10"></textarea>
                 <p id="paragrafo">Insira o que deseja criptografar ou descriptografar</p>
-                <button class="copiar" id="copy-btn" type="button" onclick="copyToClickBoard()">COPIAR</button>
-                <button class="btn-reset" id="btn-reset" onClick="window.location.reload();">Limpar</button> <!--
+                <button class="copiar" id="copy-btn" type="button" style="background-color: green"; onclick="copyToClickBoard()">Copiar</button>
+                <button class="btn-reset" id="btn-reset" style="background-color: royalblue;" onClick="window.location.reload();">Limpar</button> <!--
                 <textarea name="menssagem" id="menssagem" cols="30" rows="10" class="menssagem"></textarea> -->
             </div>
         </div>
     </div>
     <footer>
-        <p>Desenvolvido por RENE</p>
+        <p>&copy;Copyright Developer RENE - 2023</p>
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<script>
+
+    var type = new Typed('.typing-text',{
+        strings : ['projeto One oracle', 'em parceria com a Alura', 'com várias implementações feitas por mim, siga minhas redes.'],
+        typeSpeed: 50,
+        loop:true
+    })
+</script>
+<script src="/script.js"></script>
 </html>

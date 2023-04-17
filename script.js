@@ -6,6 +6,7 @@ function criptografar() {
     let tituloMenssagem = document.getElementById("titulo-menssagem");
     let paragrafo = document.getElementById("paragrafo");
     let boneco = document.getElementById("boneco");
+    
 
     let textoCriptografado = texto
     .replaceAll("e", "enter")
@@ -14,16 +15,18 @@ function criptografar() {
     .replaceAll("o", "ober")
     .replaceAll("u", "ufat");
 
+   
+
     if (texto.length != 0) {
         texto = textoCriptografado;
         tituloMenssagem.textContent = textoCriptografado;
         paragrafo.textContent = "";
-        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/busca.jpg";
+        boneco.src = "/cad_fechado.png";
     } else {
-        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/erro.jpg";
-        tituloMenssagem.textContent = "Nenhuma menssagem foi encontrada";
-        paragrafo.textContent = "Insira o texto que deseja Criptografar";
-        alert("Insira um texto");
+        boneco.src = "/erro.jpg";
+        tituloMenssagem.textContent = "Nenhuma menssagem foi encontrada para criptografar!";
+        paragrafo.textContent = "👈Insira o texto que deseja criptografar";
+        alert("Por favor, insira um texto para criptografar!");
         return textoCriptografado;
     }
     tituloMenssagem.value = textoCriptografado, btnCopiar.style.display='block';
@@ -31,6 +34,8 @@ function criptografar() {
 }
 
 function descriptografar() {
+    let btnCopiar = document.getElementById("copy-btn");
+    let btnReset = document.getElementById("btn-reset");
     let texto = document.getElementById("texto").value;
     let tituloMenssagem = document.getElementById("titulo-menssagem");
 
@@ -45,13 +50,16 @@ function descriptografar() {
         texto = textoCriptografado;
         tituloMenssagem.textContent = textoCriptografado;
         paragrafo.textContent = "";
-        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/busca.jpg";
+        boneco.src = "/cad_aberto.png";
     } else {
-        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/erro.jpg";
-        tituloMenssagem.textContent = "Nenhuma menssagem foi encontrada para descriptar!";
-        paragrafo.textContent = "Insira o texto que deseja descriptar.";
-        alert("Por favor, inserira um texto!");
+        boneco.src = "/erro.jpg";
+        tituloMenssagem.textContent = "Nenhuma menssagem foi encontrada para descriptografar!";
+        paragrafo.textContent = "👈Insira o texto que deseja descriptografar.";
+        alert("Por favor, inserira um texto para descriptografar!");
+        return textoCriptografado;
     }
+    tituloMenssagem.value = textoCriptografado, btnCopiar.style.display='block';
+    tituloMenssagem.value = textoCriptografado, btnReset.style.display='block';
 }
 function copyToClickBoard(){
     
@@ -59,7 +67,7 @@ function copyToClickBoard(){
 
     navigator.clipboard.writeText(content)
         .then(() => {
-        alert("Texto copiado para área de transferência...")
+        alert("✅Texto copiado para área de transferência...")
     })
         .catch(err => {
         console.log('Something went wrong', err);

@@ -1,13 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 * {
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
+}
+body{
+    width: 100vw;
+    height: 55vw; 
 }
 
 .container {
     position: relative;
     width: 100vw;
-    height: 60vw;
-    background: gray;
+    height: 55vw;
+    background: linear-gradient(236.85deg, #051933 27.26%, #3af 96.03%);
+}
+
+.share {
+    width: 80vw;
+    height: 100px;
+    top: 10%;
+    margin-left: 10%;
+}
+.share a{
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    padding: 0.5rem 0.8rem;
+    margin: 0.6rem;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+.share a:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #555;
+}
+.share h3{
+    width: 80vw;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.share h3 span{
+    width: 80vw;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: none;
 }
 
 .texto {
@@ -18,7 +60,8 @@
     top: 15%;
     border: none;
     border-radius: 15px;
-    font-family: "Inter";
+    /*font-family: "Inter";*/
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -50,7 +93,8 @@
 }
 
 .aviso p {
-    font-family: "Inter";
+    /*font-family: "Inter";*/
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -80,8 +124,10 @@
     gap: 8px;
     width: 25%;
     background-color: blue;
+    border: 1px solid white;
     border-radius: 24px;
-    font-family: "Inter";
+    /*font-family: "Inter";*/
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     line-height: 19px;
     align-items: center;
@@ -94,14 +140,23 @@
     padding: 2%;
     gap: 8px;
     width: 25%;
-    background-color: blue;
+    text-transform: uppercase;
+    border: 1px solid blue;
     border-radius: 24px;
-    font-family: "Inter";
+    /*font-family: "Inter";*/
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     line-height: 19px;
     align-items: center;
     color: white;
     display: none;
+}
+
+.copiar:hover, .btn-reset:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+    
 }
 
 .btn-descriptografar {
@@ -116,7 +171,8 @@
     background: white;
     border: 1px solid blue;
     border-radius: 24px;
-    font-family: "Inter";
+    /*font-family: "Inter";*/
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
@@ -135,9 +191,9 @@
     justify-content: center;
     position: absolute;
     width: 30%;
-    height: 70%;
+    height: 82%;
     left: 60%;
-    top: 5%;
+    top: 11%;
     background: white;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
@@ -152,24 +208,33 @@
     gap: 16px;
     position: absolute;
     width: 100%;
-    top: 65%;
+    top: 55%;
     text-align: center;
 }
 
-.menssagem-cifrada h2 {
-    width: 60%;
-    font-family: "Inter";
+
+.resultado {
+    width: 80%;
+    height: 150px;
+    left: 12%;
+    top: 10%;
+    border: none;
+    /*font-family: "Inter";*/
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 24px;
-    line-height: 120%;
+    line-height: 100%;
     text-align: center;
+    background-color: white;
     color: #343a40;
+    padding: 5px;
 }
 
 .menssagem-cifrada p {
     width: 80%;
-    font-family: "Inter";
+    /*font-family: "Inter";*/
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -180,16 +245,16 @@
 
 .cifrado img {
     position: absolute;
-    width: 60%;
+    width: 80%;
     height: 50%;
-    top: 15%;
+    top: 5%;
 
 }
 
 footer {
     width: 100%;
-    height: 5%;
-    top: 95%;
+    height: 3%;
+    top: 97%;
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -200,78 +265,146 @@ footer {
 }
 
 footer p {
+    font-family: 'Nunito', sans-serif;
     padding: 10px auto;
     justify-content: center;
     color: black;
     align-items: center;
-    margin: 15px auto;
+    margin: 5px auto;
     display: flex;
     font-weight: bold;
 
 
 }
 
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 57.em) {
-    .container {
-        display: flex;
-        flex-direction: row;
+@media screen and (max-width: 1200px) {
+    body{
+        display: block;
     }
-
-    .cifrada {
-        width: 100%;
+    .container{
+        display: block;
     }
-    .texto {
-        width: 80%;
-        height: 60%;
-        left: 10%;
-        top: 5%;
+}
+@media screen and (max-width: 768px) {
+    body{
+        display: inline-block;
     }
-
-    .aviso {
-        width: 80%;
-        left: 10%;
-        top: 67%;
+    .container{
+        display: block;
     }
+}
 
-    .aviso p {
+@media screen and (max-width: 600px){
+    body{
+        align-items: center;
+        /*width: 100%;
+        height: 100%;*/
+    }
+    .container{
+        display: block;
+        width: 100vw;
+        height: 220vw;
+    }
+    .share{
+
+    }
+    .share h3{
+        font-size: 21px;
+        color: darkgreen;
+        font-weight: bold ;
+    }
+    .share h3 span{
         font-size: 16px;
     }
-
-    .botoes {
-        width: 80%;
-        left: 10%;
-        top: 70%;
+    .texto{
+        display: inline-block;
+        width: 70vw;
+        height: 30vw;
+        margin: 25px 30px 20px 0%;
+        font-size: 20px;
     }
+    .cifrado{
+        display: block;
+        flex-direction: column;
+        width: 78vw;
+        height: 110vw;
+        top: 102vw;
+        margin: 0 auto;
+        font-size: 10px;
+        left: 12%;
 
-    .btn-cifrada, .btn-descriptografar {
-        width: 48%;
-        border-radius: 16px;
+        
     }
+    .cifrado img{
+        align-items: center;
+        width: 70vw;
+        height: 50vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        left: 5%;
+        top: 1%;
+        border-radius: 15px;
+    }
+    .menssagem-cifrada{
+        display: inline-block;
+        width: 85vw;
+        height: 100px;
+        top: 50vw;
+        left: 3%;
+    } 
 
+    .menssagem-cifrada p{
+        align-items: center;
+    }
+    .resultado {
+        display: block;
+
+    }
+    .aviso{
+        top: 36%;
+    }
+    .botoes{
+        display: inline-flex;
+        top: 38%;
+        margin-left: 0 auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .btn-criptografar, .btn-descriptografar {
+        width: 45%;
+        font-size: 15px;
+    }
     .btn-criptografar:hover, .btn-descriptografar:hover {
-        margin: 0.3%;
-        width: 47.5%;
-        padding: 1.8%;
+        width: 40%;
+        font-size: 15px;
+    }
+    
+    .copiar, .btn-reset{
+        width: 200px;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-left: 10%;
+    }
+    .copiar:hover{
+        width: 180px;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-left: 13%;
+    }
+    .btn-reset:hover{
+        width: 180px;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-left: 13%;
+    }
+    .footer{
+        flex-direction: column;
+        margin-top: -110px;
+        margin-left: 0;
+    }
+    .footer p{
+        font-size: 10px;
     }
 
-    .cifrada {
-        width: 80%;
-        height: 15%;
-        left: 10%;
-        top: 80%;
-    }
-
-    .menssagem-cifrada {
-        width: 100%;
-        top: 5%;
-    }
-
-    .cifrada img {
-        top: 0;
-        display: none;
-        visibility: hidden;
-    }
 }
