@@ -21,9 +21,9 @@ function criptografar() {
         texto = textoCriptografado;
         tituloMenssagem.textContent = textoCriptografado;
         paragrafo.textContent = "";
-        boneco.src = "/cad_fechado.png";
+        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/img/cad_fechado.png";
     } else {
-        boneco.src = "/erro.jpg";
+        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/img/erro.jpg";
         tituloMenssagem.textContent = "Nenhuma menssagem foi encontrada para criptografar!";
         paragrafo.textContent = "👈Insira o texto que deseja criptografar";
         alert("Por favor, insira um texto para criptografar!");
@@ -50,9 +50,9 @@ function descriptografar() {
         texto = textoCriptografado;
         tituloMenssagem.textContent = textoCriptografado;
         paragrafo.textContent = "";
-        boneco.src = "/cad_aberto.png";
+        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/img/cad_aberto.png";
     } else {
-        boneco.src = "/erro.jpg";
+        boneco.src = "https://raw.githubusercontent.com/ReneFarias/decodificador_one/main/img/erro.jpg";
         tituloMenssagem.textContent = "Nenhuma menssagem foi encontrada para descriptografar!";
         paragrafo.textContent = "👈Insira o texto que deseja descriptografar.";
         alert("Por favor, inserira um texto para descriptografar!");
