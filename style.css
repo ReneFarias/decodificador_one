@@ -281,8 +281,34 @@ footer p {
     body{
         display: block;
     }
+    .share{
+        display: inline-block;
+    }
+    .share a{
+        width: 1.5vw;
+        margin: 0 auto;
+    }
+    .share h3{
+        display: block;
+        font-size: 25px;
+        color: rgb(51, 219, 51);
+        font-weight: bold ;
+        top: 2px;
+        left: 0%;
+    }
+    .share h3 span{
+        font-size: 18px;
+        width: 80vw;
+    }
     .container{
         display: block;
+    }
+    .texto{
+        display: inline-block;
+        width: 45vw;
+        height: 30vw;
+        margin: 3px 5px 50px -5%;
+        font-size: 20px;
     }
     .cifrado img{
         align-items: center;
@@ -314,6 +340,9 @@ footer p {
         font-size: 15px;
 
     }
+    .aviso{
+        top: 78%;
+    }
     .copiar, .btn-reset{
        
         align-items: center;
@@ -339,7 +368,7 @@ footer p {
         
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)  {
     body{
         display: inline-block;
     }
